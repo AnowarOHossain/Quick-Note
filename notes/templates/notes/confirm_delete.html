@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}Delete Note - QuickNote{% endblock %}
+{% block content %}
+<div class="form-container">
+    <h2>Confirm Delete</h2>
+    <p>Are you sure you want to delete "{{ note.title }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+    <a href="{% url 'home' %}" class="cancel-link">Cancel</a>
+</div>
+<style>
+    .form-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    button {
+        background-color: #dc3545;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    button:hover {
+        background-color: #c82333;
+    }
+    .cancel-link {
+        color: #007bff;
+        text-decoration: none;
+        margin-top: 1rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
+    .cancel-link:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 15px;
+            margin: 15px;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+</style>
+{% endblock %}

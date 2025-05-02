@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %}Login - QuickNote{% endblock %}
+{% block content %}
+<div class="form-container">
+    <h2>Login</h2>
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if form.errors %}
+            <p class="error">Invalid username or password.</p>
+        {% endif %}
+        <button type="submit">Login</button>
+    </form>
+</div>
+<style>
+    .form-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form p {
+        margin: 0.5rem 0;
+    }
+    label {
+        color: #333;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+        display: block;
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .error {
+        color: #dc3545;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 15px;
+            margin: 15px;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+</style>
+{% endblock %}
