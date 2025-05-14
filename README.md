@@ -100,10 +100,10 @@ python manage.py runserver
 
 ```
 Notes/
-├── quicknote/               # Project config
+├── quicknote/              
 │   ├── settings.py
 │   ├── urls.py
-├── notes/                   # Main App
+├── notes/                   
 │   ├── migrations/
 │   ├── templates/
 │   │   ├── notes/
@@ -118,7 +118,7 @@ Notes/
 │   ├── views.py
 │   ├── forms.py
 │   ├── urls.py
-├── screenshots/             # Add screenshots here
+├── screenshots/             
 ├── manage.py
 └── README.md
 ```
