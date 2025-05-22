@@ -1,10 +1,9 @@
 
-# Notes: A Django-Powered Note-Taking Web App
+# QuickNote: A Django-Powered Note-Taking Web App
 
 ## 🌟 Overview
-**Notes** (also called **QuickNote**) is a lightweight web app built with Django that lets users securely create, edit, view, and delete personal notes — just like a digital notebook! It's responsive, beginner-friendly, and perfect for organizing your ideas.
+**QuickNote** is a lightweight web app built with Django that lets users securely create, edit, view, and delete personal notes — just like a digital notebook! It's responsive, beginner-friendly, and perfect for organizing your ideas.
 
----
 
 ## 🚀 Features
 
@@ -27,7 +26,6 @@
 - Minimalist UI with **blue & white** tones.
 - Consistent **QuickNotes header** on every page.
 
----
 
 ## 📸 Screenshots (Add Real Images)
 > Replace placeholder texts with real screenshots in the `screenshots/` folder.
@@ -38,7 +36,6 @@
 - **Delete Confirmation**: Avoid accidental deletions.
 - **Logged Out Page**: Shown after logout with a login link.
 
----
 
 ## 🛠 Technologies Used
 
@@ -54,15 +51,12 @@
 - **SQLite**: Lightweight DB for storing notes and users.
 - **Django ORM**: Manages database operations.
 
----
 
 ## ⚙️ Prerequisites
 
 - Python 3.8+
 - pip
 - Git
-
----
 
 ## 📥 Setup Instructions
 
@@ -89,16 +83,13 @@ python manage.py createsuperuser
 
 # Run Development Server
 python manage.py runserver
-```
 
 - Visit: `http://127.0.0.1:8000/`
 - Admin: `http://127.0.0.1:8000/admin/`
 
----
 
 ## 🗂 Project Structure
 
-```
 Notes/
 ├── quicknote/              
 │   ├── settings.py
@@ -117,13 +108,9 @@ Notes/
 │   ├── models.py
 │   ├── views.py
 │   ├── forms.py
-│   ├── urls.py
-├── screenshots/             
+│   ├── urls.py           
 ├── manage.py
 └── README.md
-```
-
----
 
 ## 🧠 Django Concepts Used
 
@@ -137,13 +124,9 @@ Notes/
 - **Template Inheritance**: Common layout via `base.html`
 - **CSRF**: `{% csrf_token %}` for form security
 
----
-
 ## 🐞 Known Issues
 
 - **Logout 405 Error**: Sometimes logout triggers a GET instead of POST. Fix in progress using POST method in logout form.
-
----
 
 ## 🤝 Contributing
 
@@ -159,16 +142,12 @@ Notes/
 - Test before submitting.
 - Add meaningful commit messages.
 
----
-
 ## 🌱 Future Improvements
 
 - Add **search** functionality.
 - Enable **note categorization**.
 - Style using **Bootstrap** or **Tailwind CSS**.
 - **Deploy** to Heroku or PythonAnywhere.
-
----
 
 ## 📜 License
 
