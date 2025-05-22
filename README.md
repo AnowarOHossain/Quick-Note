@@ -3,10 +3,6 @@
 
 ## 🌟 Overview
 **QuickNote** is a lightweight web app built with Django that lets users securely create, edit, view, and delete personal notes — just like a digital notebook! It's responsive, beginner-friendly, and perfect for organizing your ideas.
-<<<<<<< HEAD
-
-=======
->>>>>>> cbac819 (screenshots and readme updated)
 
 ## 🚀 Features
 
@@ -29,31 +25,13 @@
 - Minimalist UI with **blue & white** tones.
 - Consistent **QuickNotes header** on every page.
 
-<<<<<<< HEAD
 
 ## 📸 Screenshots (Add Real Images)
-=======
-## 📸 Screenshots:
->>>>>>> cbac819 (screenshots and readme updated)
 > Replace placeholder texts with real screenshots in the `screenshots/` folder.
 
 - **Login Page**: Enter your credentials to access notes.  
   ![Login Page](screenshots/Login-page.png)
 
-<<<<<<< HEAD
-=======
-- **Home Page**: Lists your notes with edit/delete options.  
-  ![Home Page](screenshots/Home-page.png)
-
-- **Create/Edit Note**: Add or update notes.  
-  ![Create/Edit Note](screenshots/Create-Note.png)
-
-- **Delete Confirmation**: Avoid accidental deletions.  
-  ![Delete Confirmation](screenshots/Delete-Note.png)
-
-- **Admin Page**: Shown after logout with a login link.  
-  ![Admin Page](screenshots/Admin-Login.png)
->>>>>>> cbac819 (screenshots and readme updated)
 
 ## 🛠 Technologies Used
 
@@ -69,10 +47,6 @@
 - **SQLite**: Lightweight DB for storing notes and users.
 - **Django ORM**: Manages database operations.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> cbac819 (screenshots and readme updated)
 ## ⚙️ Prerequisites
 
 - Python 3.8+
@@ -108,10 +82,6 @@ python manage.py runserver
 - Visit: `http://127.0.0.1:8000/`
 - Admin: `http://127.0.0.1:8000/admin/`
 
-<<<<<<< HEAD
-
-=======
->>>>>>> cbac819 (screenshots and readme updated)
 ## 🗂 Project Structure
 
 Notes/
@@ -132,12 +102,7 @@ Notes/
 │   ├── models.py
 │   ├── views.py
 │   ├── forms.py
-<<<<<<< HEAD
 │   ├── urls.py           
-=======
-│   ├── urls.py
-├── screenshots/             
->>>>>>> cbac819 (screenshots and readme updated)
 ├── manage.py
 └── README.md
 
