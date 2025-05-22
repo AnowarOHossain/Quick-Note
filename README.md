@@ -25,7 +25,6 @@
 - Consistent **QuickNotes header** on every page.
 
 ## 📸 Screenshots:
-> Replace placeholder texts with real screenshots in the `screenshots/` folder.
 
 - **Login Page**: Enter your credentials to access notes.  
   ![Login Page](screenshots/Login-page.png)
@@ -39,7 +38,7 @@
 - **Delete Confirmation**: Avoid accidental deletions.  
   ![Delete Confirmation](screenshots/Delete-Note.png)
 
-- **Admin Page**: Shown after logout with a login link.  
+- **Admin Page**: Admin Login Page.  
   ![Admin Page](screenshots/Admin-Login.png)
 
 ## 🛠 Technologies Used
