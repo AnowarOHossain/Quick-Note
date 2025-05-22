@@ -1,4 +1,3 @@
-
 # QuickNote: A Django-Powered Note-Taking Web App
 
 ## 🌟 Overview
@@ -25,13 +24,23 @@
 - Minimalist UI with **blue & white** tones.
 - Consistent **QuickNotes header** on every page.
 
-
-## 📸 Screenshots (Add Real Images)
+## 📸 Screenshots:
 > Replace placeholder texts with real screenshots in the `screenshots/` folder.
 
 - **Login Page**: Enter your credentials to access notes.  
   ![Login Page](screenshots/Login-page.png)
 
+- **Home Page**: Lists your notes with edit/delete options.  
+  ![Home Page](screenshots/Home-page.png)
+
+- **Create/Edit Note**: Add or update notes.  
+  ![Create/Edit Note](screenshots/Create-Note.png)
+
+- **Delete Confirmation**: Avoid accidental deletions.  
+  ![Delete Confirmation](screenshots/Delete-Note.png)
+
+- **Admin Page**: Shown after logout with a login link.  
+  ![Admin Page](screenshots/Admin-Login.png)
 
 ## 🛠 Technologies Used
 
@@ -57,8 +66,8 @@
 
 ```bash
 # Clone the Repository
-git clone https://github.com/AnowarOHossain/Notes.git
-cd Notes
+git clone https://github.com/AnowarOHossain/Quick-Note.git
+cd Quick-Note
 
 # Create Virtual Environment
 python -m venv venv
@@ -77,14 +86,14 @@ python manage.py migrate
 python manage.py createsuperuser
 
 # Run Development Server
-python manage.py runserver
+python manage.py runserver  
 
 - Visit: `http://127.0.0.1:8000/`
 - Admin: `http://127.0.0.1:8000/admin/`
 
 ## 🗂 Project Structure
 
-Notes/
+QuickNote/
 ├── quicknote/              
 │   ├── settings.py
 │   ├── urls.py
@@ -102,21 +111,22 @@ Notes/
 │   ├── models.py
 │   ├── views.py
 │   ├── forms.py
-│   ├── urls.py           
+│   ├── urls.py
+├── screenshots/             
 ├── manage.py
 └── README.md
 
 ## 🧠 Django Concepts Used
 
 - **Models**: `Note` model
-- **Views**: For home, create, update, delete
-- **Templates**: Render all pages
-- **URL Routing**: Navigation & actions
+- **Views**: Home, create, update, delete functions
+- **Templates**: Rendering pages dynamically
+- **URL Routing**: Navigation and user actions
 - **Authentication**: Secure login/logout
 - **Forms**: `NoteForm` for user input
-- **Decorators**: `@login_required` to protect views
+- **Decorators**: `@login_required` for security
 - **Template Inheritance**: Common layout via `base.html`
-- **CSRF**: `{% csrf_token %}` for form security
+- **CSRF Protection**: `{% csrf_token %}` for secure forms
 
 ## 🐞 Known Issues
 
@@ -129,7 +139,7 @@ Notes/
 2. **Create a branch**: `git checkout -b feature-name`
 3. **Make changes & commit**: `git commit -m "Your message"`
 4. **Push** to GitHub: `git push origin feature-name`
-5. **Open a Pull Request**
+5. **Open a Pull Request`
 
 **Guidelines**:
 - Keep code clean and readable.
@@ -149,5 +159,5 @@ This project is under the **MIT License**. See `LICENSE` file for more info.
 
 ## 📬 Contact
 
-Email: **anowar44400@gmail.com**  
-GitHub: [Open an Issue](https://github.com/AnowarOHossain/Notes/issues)
+Email: **anowarhossain.dev@gmail.com**  
+GitHub: [Open an Issue](https://github.com/AnowarOHossain/Quick-Note/issues)
