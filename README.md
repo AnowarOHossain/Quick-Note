@@ -117,46 +117,46 @@ QuickNote/
 
 ## 🧠 Django Concepts Used
 
-- **Models**: `Note` model
-- **Views**: Home, create, update, delete functions
-- **Templates**: Rendering pages dynamically
-- **URL Routing**: Navigation and user actions
-- **Authentication**: Secure login/logout
-- **Forms**: `NoteForm` for user input
-- **Decorators**: `@login_required` for security
-- **Template Inheritance**: Common layout via `base.html`
-- **CSRF Protection**: `{% csrf_token %}` for secure forms
+- Models: `Note` model
+- Views: Home, create, update, delete functions
+- Templates: Rendering pages dynamically
+- URL Routing: Navigation and user actions
+- Authentication: Secure login/logout
+- Forms: `NoteForm` for user input
+- Decorators: `@login_required` for security
+- Template Inheritance: Common layout via `base.html`
+- CSRF Protection: `{% csrf_token %}` for secure forms
 
 ## 🐞 Known Issues
 
-- **Logout 405 Error**: Sometimes logout triggers a GET instead of POST. Fix in progress using POST method in logout form.
+- Logout 405 Error: Sometimes logout triggers a GET instead of POST. Fix in progress using POST method in logout form.
 
 ## 🤝 Contributing
 
 ### Steps:
-1. **Fork** the repository.
-2. **Create a branch**: `git checkout -b feature-name`
-3. **Make changes & commit**: `git commit -m "Your message"`
-4. **Push** to GitHub: `git push origin feature-name`
-5. **Open a Pull Request`
+1. Fork the repository.
+2. Create a branch: `git checkout -b feature-name`
+3. Make changes & commit: `git commit -m "Your message"`
+4. Push to GitHub: `git push origin feature-name`
+5. Open a Pull Request`
 
-**Guidelines**:
+Guidelines:
 - Keep code clean and readable.
 - Test before submitting.
 - Add meaningful commit messages.
 
 ## 🌱 Future Improvements
 
-- Add **search** functionality.
-- Enable **note categorization**.
-- Style using **Bootstrap** or **Tailwind CSS**.
-- **Deploy** to Heroku or PythonAnywhere.
+- Add search functionality.
+- Enable note categorization.
+- Style using Bootstrap or Tailwind CSS.
+- Deploy to Heroku or PythonAnywhere.
 
 ## 📜 License
 
-This project is under the **MIT License**. See `LICENSE` file for more info.
+This project is under the MIT License. See `LICENSE` file for more info.
 
 ## 📬 Contact
 
-Email: **anowarhossain.dev@gmail.com**  
+Email: anowarhossain.dev@gmail.com
 GitHub: [Open an Issue](https://github.com/AnowarOHossain/Quick-Note/issues)
